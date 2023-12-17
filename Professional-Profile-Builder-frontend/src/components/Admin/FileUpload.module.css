@@ -1,0 +1,135 @@
+.Admin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(var(--bg-light));
+  }
+  
+  ::selection {
+    color: #fff;
+    background: #3e134f;
+  }
+  .wrapper {
+    width: 430px;
+    background: #fff;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.05);
+  }
+  .wrapper header {
+    color: #9b59b6;
+    font-size: 27px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .wrapper .container {
+    height: 167px;
+    display: flex;
+    cursor: pointer;
+    margin: 30px 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 2px dashed #9b59b6;
+  }
+  .Admin .container :where(svg, p) {
+    color: #9b59b6;
+  }
+  .Admin .container svg {
+    font-size: 50px;
+  }
+  .Admin .container p {
+    margin-top: 15px;
+    font-size: 16px;
+  }
+  
+  .Admin .row {
+    margin-bottom: 10px;
+    background: #e9f0ff;
+    list-style: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .Admin .row svg {
+    color: #9b59b6;
+    font-size: 30px;
+  }
+  .Admin .details span {
+    font-size: 14px;
+  }
+  .progress-area .row .content {
+    width: 100%;
+    margin-left: 15px;
+  }
+  .progress-area .details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+    justify-content: space-between;
+  }
+  .progress-area .content .progressBar {
+    height: 6px;
+    width: 100%;
+    margin-bottom: 4px;
+    background: #fff;
+    border-radius: 30px;
+  }
+  .content .progress-bar .progress {
+    height: 100%;
+    width: 0%;
+    background: #9b59b6;
+    border-radius: inherit;
+  }
+  .uploadedArea {
+    max-height: 232px;
+    overflow-y: scroll;
+  }
+  .uploadedArea.onprogress {
+    max-height: 150px;
+  }
+  .uploadedArea::-webkit-scrollbar {
+    width: 0px;
+  }
+  .uploadedArea .row .content {
+    display: flex;
+    align-items: center;
+  }
+  .uploadedArea .row .details {
+    display: flex;
+    margin-left: 15px;
+    flex-direction: column;
+  }
+  .uploadedArea .row .details .size {
+    color: #404040;
+    font-size: 11px;
+  }
+  
+  .uploadedArea svg.fa-check {
+    font-size: 16px;
+  }
+  
+  .wrapper button {
+    display: block;
+    margin-inline: auto;
+    justify-content: center;
+    color: #ffffff;
+    font-size: large;
+    width: 80%;
+    background-color: #9b59b6;
+    border: 1px solid #9b59b6;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .wrapper button:disabled {
+    background-color: gray;
+  }
+  
+  .fileName {
+    font-weight: 700;
+  }

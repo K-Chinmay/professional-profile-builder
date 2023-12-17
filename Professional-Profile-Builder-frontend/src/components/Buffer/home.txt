@@ -1,0 +1,86 @@
+import React from "react";
+
+function Home() {
+  return (
+    <div className="pt-5">
+      <section className="flex md:flex-row flex-col sm:py-16 py-6 justify-center items-center">
+        <div className="flex-1 flex justify-center items-center flex-col bg-white ">
+        <h1 className="text-center font-poppins font-semibold xs:text-[48px] text-[40px] xs:leading-[76.8px] leading-[50.8px]">Profile Builder</h1>
+          <h2 className="font-poppins font-semibold xs:text-[30px] text-[24px] xs:leading-[76.8px] leading-[50.8px] w-full text-center">
+            We make it easy for you to create a resume profile
+          </h2>
+          <p className="m-5 font-poppins font-semibold  text-[24px] leading-[30.8px] text-center">
+            Using our resume building service, you will generate job leads and
+            be able to reach your potential employers. you can apply to the job
+            openings that match your profile and stand the best chance of
+            landing your dream job.
+          </p>
+          <div className="justify-center sm:ml-20 md:ml-40 mt-5 flex ">
+            <p className="m-8">
+              <button className="py-4 px-6 font-poppins font-medium text-[18px] text-primary bg-gradient-to-r from-cyan-500 to-blue-500 rounded-[10px] outline-none ">
+                Student 
+              </button>
+            </p>
+            <p className="m-8">
+              <button className="py-4 px-6 font-poppins font-medium text-[18px] text-primary bg-gradient-to-r from-cyan-500 to-blue-500 rounded-[10px] outline-none ">
+                Admin
+              </button>
+            </p>
+           
+          </div>
+        </div>
+
+        
+      </section>
+      <div className="flex-1 flex justify-center items-center md:ml-10 ml-0 md:mt-0 mt-10 relative  bg-gray-200">
+          <img
+            src="https://cdn.pixabay.com/photo/2016/02/08/11/24/homepage-1186348__340.jpg"
+            alt="studentHome"
+            className="w-[100%] h-[100%]"
+          />
+        </div>
+    </div>
+  );
+}
+
+export default Home;
+
+
+<div className="my-3 mb-6 space-y-2">
+                  <label
+                    for="image"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-black"
+                  >
+                    Image Url
+                  </label>
+                  <input
+                    type="text"
+                    id="image"
+                    class="bg-gray-50 border-b-2 text-gray-900 text-sm  focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white dark:border-black dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder=""
+                    required
+                    value={userData.imageurl}
+                    onChange={handleInputs}
+                  />
+                </div>
+
+after award
+                <div className="my-3 space-y-2">
+                        <label
+                          for="certify"
+                          class="block mb-2 text-sm font-medium text-gray-900 dark:text-black"
+                        >
+                          Certificate
+                        </label>
+                        <input
+                          type="file"
+                          id="certify"
+                          name="certify"
+                          class="bg-gray-50 border-b-2 text-gray-900 text-sm  focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white dark:border-black dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                          placeholder=""
+                          value={field.certify}
+                          onChange={(event) => handleAwardChange(index, event)}
+                          required
+                        />
+                      </div>
+                    </div>
